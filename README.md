@@ -136,6 +136,29 @@ Colour colour = JsonConvert.DeserializeObject<Colour>("2", settings)!; // Green
 
 ---
 
+## Optional: EF Core Value Converter
+```csharp
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+
+public class SmartEnumConverter<TEnum, TValue> 
+    : ValueConverter<TEnum, TValue>
+    where TEnum : SmartEnum<TEnum, TValue>
+    where TValue : notnull
+{
+    public SmartEnumConverter() 
+        : base(
+            v => v.Value,
+            v => SmartEnum<TEnum, TValue>.FromValue(v))
+    { }
+}
+```
+
+Usage
+```csharp
+builder.Property(x => x.Status)
+       .HasConversion(new SmartEnumConverter<OrderStatus, int>());
+```
+
 ## License
 
 MIT – see [LICENSE](LICENSE).

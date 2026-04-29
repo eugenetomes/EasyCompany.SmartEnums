@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/src/">
+    <Project Path="EasyCompany.ConsoleApp/EasyCompany.ConsoleApp.csproj" Id="7755c769-167c-475f-9fe8-86e3332163b6" />
     <Project Path="src/EasyCompany.SmartEnums/EasyCompany.SmartEnums.csproj" />
   </Folder>
   <Folder Name="/tests/">
