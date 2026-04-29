@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/EasyCompany.SmartEnums/EasyCompany.SmartEnums.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/EasyCompany.SmartEnums.Tests/EasyCompany.SmartEnums.Tests.csproj" />
+  </Folder>
+</Solution>
