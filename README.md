@@ -1,0 +1,1 @@
+# EasyCompany.SmartEnums
