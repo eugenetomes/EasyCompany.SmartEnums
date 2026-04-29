@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <!-- NuGet metadata -->
+    <PackageId>EasyCompany.SmartEnums</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>EasyCompany</Authors>
+    <Description>A simple Smart Enum base class library with JSON serialisation helpers for System.Text.Json and Newtonsoft.Json.</Description>
+    <PackageTags>smart enum smartenum json serialization</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/eugenetomes/EasyCompany.SmartEnums</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Include README in the NuGet package -->
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Newtonsoft.Json is an optional dependency for the Newtonsoft converter -->
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>
